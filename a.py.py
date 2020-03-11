@@ -1,6 +1,6 @@
 # -*- coding:utf-8 -*-
 
-import discord, asyncio, random, time
+import discord, asyncio, random, time, os
 token = "Njg2NDIyNzI1MTkxMDA4MjU4.XmYGdg.43QqoDxiZK7D9BKonvDVH3-xt2Q" # 아까 메모해 둔 토큰을 입력합니다
 client = discord.Client() # discord.Client() 같은 긴 단어 대신 client를 사용하겠다는 선언입니다.
 
@@ -92,8 +92,7 @@ async def on_message(message): # 메시지가 들어 올 때마다 가동되는 
         #wish[user.name]=() 
     
 
-
-client.run("Njg2NDIyNzI1MTkxMDA4MjU4.XmYGdg.43QqoDxiZK7D9BKonvDVH3-xt2Q") # 아까 넣어놓은 토큰 가져다가 봇을 실행하라는 부분입니다. 이 코드 없으면 구문이 아무리 완벽해도 실행되지 않습니다.
+client.run(access_token) # 아까 넣어놓은 토큰 가져다가 봇을 실행하라는 부분입니다. 이 코드 없으면 구문이 아무리 완벽해도 실행되지 않습니다.
 
 
 
